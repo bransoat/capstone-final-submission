@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animetrics</title>
+
+<!-- Bootstrap v4 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+h3 {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #03b5d2;
+}
+
+.accordion a.active {
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+</style>
+</head>
+
+<body>
+
+<!-- INSERT HTML PAGE CONTENT HERE -->
+<nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light bg-white"> 
+  <img src="images/logo.png" alt="logo">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle align-bottom" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="about.html">
+        About
+      </a>
+      <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="faq.html">FAQs</a>
+        <a class="dropdown-item" href="contact.html">Contact</a>
+    </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="buy.html">Buy Devices</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="activate.html">Activate Devices</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="projects.html">My Teams</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="forum.html">Forum</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Login/Register</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<div style="background-color: white; border-radius: 4px; margin-top: 20px;" class="container">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <a>What is Animetrics?</a>
+      <div class="content">
+        <p>Animetrics is a company that uses animal boxes to record and share data.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What's the advantage to using an Animetrics box?</a>
+      <div class="content">
+        <p>Animetrics boxes are excellent for recording data and minimizing time in the field.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How do the boxes work?</a>
+      <div class="content">
+        <p>The boxes record the animals, take pictures of the animals, and record data about the animals.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Are Animetrics Boxes only for professional researchers?</a>
+      <div class="content">
+        <p>No way! Institutions of all kinds are encouraged to use our product.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- Footer -->
+<footer class="fixed-bottom page-footer font-small teal pt-4 navbar navbar-fixed-bottom justify-content-center">
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="index.html"> animetrix.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!--Footer-->
+
+<!-- jQuery and Bootstrap links - do not delete! -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- end of do not delete -->
+<script>items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+</body>
+
+</html>
